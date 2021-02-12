@@ -8,14 +8,14 @@ export default function Home(){
     useEffect(()=>{
         axios({
             method: 'get',
-            url: '/memes'
+            url: 'https://memewebapp.herokuapp.com/memes'
         })
         .then((res)=>setList(res.data));
     });
 
     const handleSubmit= (evt) => {
         evt.preventDefault();
-        axios.post('/memes',{
+        axios.post('https://memewebapp.herokuapp.com/memes',{
             name,
             caption,
             url

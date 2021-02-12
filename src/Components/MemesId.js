@@ -10,7 +10,7 @@ export default function MemesID(props){
         console.log(typeof(id));
         axios({
             method: 'get',
-            url: '/memes/'+id
+            url: 'https://memewebapp.herokuapp.com/memes/'+id
         })
         .then((res)=>setList(JSON.stringify(res.data)));
     });

@@ -7,7 +7,7 @@ export default function Memes(){
     useEffect(()=>{
         axios({
             method: 'get',
-            url: '/memes'
+            url: 'https://memewebapp.herokuapp.com/memes'
         })
         .then((res)=>setList(JSON.stringify(res.data)));
     });
