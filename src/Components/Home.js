@@ -21,6 +21,7 @@ export default function Home(){
             url
         })
         .then(res => console.log(res))
+        alert("Submitted successfully");
     };
     return (
         <React.Fragment>
